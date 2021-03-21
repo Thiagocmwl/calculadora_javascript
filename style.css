@@ -1,0 +1,19 @@
+.row {
+    margin-bottom: 25px;
+}
+
+.btn-light {
+    background-color: #C0C0C0;
+}
+
+.btn-light:hover {
+    background-color: #A9A9A9;
+}
+
+.btn-secondary {
+    background-color: #4F4F4F;
+}
+
+.btn-secondary:hover {
+    background-color: #1C1C1C;
+}

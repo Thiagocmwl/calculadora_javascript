@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+
+        <!-- Caixa de texto -->
+        <div class="row">
+            <div class="col-10">
+                <input type="text" id="calculo" class="form-control" readonly>
+            </div>
+        </div> <!-- Caixa de texto -->
+
+        <!-- Números 7 8 9 -->
+        <div class="row">
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('7')">7</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('8')">8</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('9')">9</button></div>
+            <div class="col-2"><button class="btn btn-secondary btn-block" onclick="inserir('+')">+</button></div>
+            <div class="col-2"><button class="btn btn-danger btn-block" onclick="apagarTudo()">C</button></div>
+        </div> <!-- Números 7 8 9 -->
+
+        <!-- Números 4 5 6 -->
+        <div class="row">
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('4')">4</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('5')">5</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('6')">6</button></div>
+            <div class="col-2"><button class="btn btn-secondary btn-block" onclick="inserir('-')">-</button></div>
+            <div class="col-2"><button class="btn btn-danger btn-block" onclick="apagar()"><-</button></div>
+        </div> <!-- Números 4 5 6 -->
+
+        <!-- Números 1 2 3 -->
+        <div class="row">
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('1')">1</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('2')">2</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('3')">3</button></div>
+            <div class="col-2"><button class="btn btn-secondary btn-block" onclick="inserir('*')">*</button></div>
+            <div class="col-2"><button class="btn btn-secondary btn-block" onclick="inserir('/')">/</button></div>
+            
+        </div> <!-- Números 1 2 3 -->
+
+        <!-- Número 0 -->
+        <div class="row">
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('.')">.</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('0')">0</button></div>
+            <div class="col-2"><button class="btn btn-light btn-block" onclick="inserir('**')">**</button></div>
+            
+            <div class="col-4"><button class="btn btn-danger btn-block" onclick="resultado()">=</button></div>
+            
+        </div> <!-- Número 0 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
